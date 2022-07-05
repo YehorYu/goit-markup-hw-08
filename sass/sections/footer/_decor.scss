@@ -1,0 +1,19 @@
+.container.footer {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__item {
+  background-color: #2f303a;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  & .logo {
+    margin-right: 0;
+  }
+
+  & .link {
+    margin-bottom: 20px;
+  }
+}

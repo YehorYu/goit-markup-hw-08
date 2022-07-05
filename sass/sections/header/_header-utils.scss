@@ -1,0 +1,20 @@
+.header__title .container {
+  @include display(flex, null, center);
+}
+
+.header__title {
+  border-bottom: 1px solid #ececec;
+}
+
+.header__nav {
+  @include display(flex, null, center);
+}
+
+.header__list {
+  display: flex;
+}
+
+.contacts {
+  display: flex;
+  margin-left: auto;
+}

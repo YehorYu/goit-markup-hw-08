@@ -1,0 +1,35 @@
+@import "./utils/vars";
+@import "./utils/mixins";
+
+@import "./components/container";
+@import "./components/hidden";
+
+@import "./sections/header/header-utils";
+@import "./sections/header/logo";
+@import "./sections/header/header-contacts";
+@import "./sections/header/decoration";
+
+@import "./sections/hero/hero";
+@import "./sections/hero/hero-btn";
+
+@import "./sections/preferences/preferences";
+
+@import "./sections/professional/professional";
+
+@import "./sections/team/team";
+@import "./sections/team/soc";
+
+@import "./sections/clients/clients";
+
+@import "./sections/footer/decor";
+@import "./sections/footer/footer-logo";
+@import "./sections/footer/adress";
+@import "./sections/footer/footer-soc";
+@import "./sections/footer/subscription";
+
+@import "./sections/portfolio/filter";
+@import "./sections/portfolio/exemples";
+
+@import "./sections/modal/backdrop";
+@import "./sections/modal/inputs";
+@import "./sections/modal/checkbox";
