@@ -1,6 +1,7 @@
 .container.footer {
   display: flex;
   align-items: baseline;
+  flex-wrap: wrap;
 }
 
 .footer__item {
@@ -16,4 +17,14 @@
   & .link {
     margin-bottom: 20px;
   }
+}
+
+.footer__container {
+  margin-bottom: 60px;
+  width: 100%;
+  text-align: center;
+  // padding-left: 50%;
+  // padding-right: 50%;
+
+  // @include display(null, center, center);
 }
