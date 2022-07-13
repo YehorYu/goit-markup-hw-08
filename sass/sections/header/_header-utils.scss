@@ -4,17 +4,23 @@
 
 .header__title {
   border-bottom: 1px solid #ececec;
+  position: relative;
 }
 
 .header__nav {
   @include display(flex, null, center);
 }
 
-.header__list {
-  display: flex;
-}
+// .header__list {
+//   display: flex;
+// }
 
 .contacts {
   display: flex;
-  margin-left: auto;
+  @media screen and (min-width: 480px) {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+  // display: flex;
+  // margin-left: auto;
 }

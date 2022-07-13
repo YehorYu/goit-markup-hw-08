@@ -74,5 +74,12 @@
 .footer__soc-input {
   text-align: center;
   width: 100%;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
   // margin-left: auto;
 }

@@ -19,13 +19,73 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <!-- <header class="header__title">
+    <header class="header__title">
       <div class="container">
-        <nav class="header__nav">
+        <div class="header__mob-nav">
           <a href="/" lang="en" class="logo link"
             ><span class="logo__item link">Web</span>Studio
           </a>
-          <ul class="header__list">
+          <button
+            type="button"
+            class="header__menu-btn"
+            aria-expanded="false"
+            data-menu-button
+          >
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="header__icon-menu"
+                href="./images/menu-mob-set.svg#icon-menu-mob"
+              ></use>
+              <use
+                class="header__icon-close"
+                href="./images/menu-mob-set.svg#icon-close-mob"
+              ></use>
+            </svg>
+          </button>
+        </div>
+        <div class="header__mob-menu" data-menu>
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="./index.html" class="header__link link current"
+                  >Студия</a
+                >
+              </li>
+              <li class="header__item">
+                <a href="./portfolio.html" class="header__link link"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="header__item">
+                <a href="" class="header__link link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="contacts">
+            <li class="header__item">
+              <a href="mailto:info@devstudio.com" class="contact__list-mail link">
+                <svg class="contact__img mail">
+                  <use href="./images/symbol-defs.svg#mail"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="header__item">
+              <a href="tel:+380961111111" class="contact__list-phone link">
+                <svg class="contact__img phone">
+                  <use href="./images/symbol-defs.svg#smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- <ul class="header__list">
             <li class="header__item">
               <a href="./index.html" class="header__link link current"
                 >Студия</a
@@ -56,9 +116,41 @@
               +38 096 111 11 11</a
             >
           </li>
+        </ul> -->
+
+        <!-- <div class="header__mob-menu is-open" data-menu>
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="./index.html" class="header__link link current">Студия</a>
+          </li>
+          <li class="header__item">
+            <a href="./portfolio.html" class="header__link link">Портфолио</a>
+          </li>
+          <li class="header__item">
+            <a href="" class="header__link link">Контакты</a>
+          </li>
         </ul>
+        <ul class="contacts">
+          <li class="header__item">
+            <a href="mailto:info@devstudio.com" class="contact__list link">
+              <svg class="contact__img mail">
+                <use href="./images/symbol-defs.svg#mail"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="header__item">
+            <a href="tel:+380961111111" class="contact__list link">
+              <svg class="contact__img phone">
+                <use href="./images/symbol-defs.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div> -->
       </div>
-    </header> -->
+    </header>
     <main>
       <section class="hero__title">
         <div class="container">
@@ -541,5 +633,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
