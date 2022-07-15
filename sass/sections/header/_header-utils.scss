@@ -8,19 +8,27 @@
 }
 
 .header__nav {
-  @include display(flex, null, center);
+  @media screen and (min-width: 768px) {
+    @include display(flex, null, center);
+  }
 }
 
-// .header__list {
-//   display: flex;
-// }
+.header__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
 
 .contacts {
-  display: flex;
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
+    display: flex;
     flex-direction: column-reverse;
     justify-content: space-between;
   }
+
+  // @media screen and (min-width: 480px) {
+
+  // }
   // display: flex;
   // margin-left: auto;
 }
