@@ -226,7 +226,7 @@
           </ul>
         </div>
       </section>
-      <!-- <section class="professional">
+      <section class="professional">
         <div class="container">
           <h2 class="professional__title">Чем мы занимаемся</h2>
           <ul class="professional__list">
@@ -252,18 +252,42 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <section class="team">
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__container">
             <li class="team__list">
-              <img
-                class="team__img"
-                src="./images/product_designer.jpg"
-                alt="Фото Продакт дизайнера"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/index/team/desktop/designer.jpg    1x,
+                    ./images/index/team/desktop/designer-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/index/team/tablet/designer-tab.jpg    1x,
+                    ./images/index/team/tablet/designer-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/index/team/mobile/designer-mob.jpg    1x,
+                    ./images/index/team/mobile/designer-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  class="team__img"
+                  src="./images/index/team/mobile/designer-mob.jpg"
+                  alt="Фото Продакт дизайнера"
+                  width="450"
+                />
+              </picture>
+
               <div class="team-member__container">
                 <h3 class="team-member">Игорь Демьяненко</h3>
                 <p lang="en" class="team__item">Product Designer</p>
@@ -300,12 +324,36 @@
               </div>
             </li>
             <li class="team__list">
-              <img
-                class="team__img"
-                src="./images/frontend_developer.jpg"
-                alt="Фото фронт разработчика"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/index/team/desktop/frontend.jpg    1x,
+                    ./images/index/team/desktop/frontend-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/index/team/tablet/frontend-tab.jpg    1x,
+                    ./images/index/team/tablet/frontend-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/index/team/mobile/frontend-mob.jpg    1x,
+                    ./images/index/team/mobile/frontend-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  class="team__img"
+                  src="./images/index/team/mobile/frontend-mob.jpg"
+                  alt="Фото фронт разработчика"
+                  width="450"
+                />
+              </picture>
+
               <div class="team-member__container">
                 <h3 class="team-member">Ольга Репина</h3>
                 <p lang="en" class="team__item">Frontend Developer</p>
@@ -342,12 +390,36 @@
               </div>
             </li>
             <li class="team__list">
-              <img
-                class="team__img"
-                src="./images/marketing.jpg"
-                alt="Фото маркетолога"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/index/team/desktop/marketing.jpg    1x,
+                    ./images/index/team/desktop/marketing-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/index/team/tablet/marketing-tab.jpg    1x,
+                    ./images/index/team/tablet/marketing-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/index/team/mobile/marketing-mob.jpg    1x,
+                    ./images/index/team/mobile/marketing-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  class="team__img"
+                  src="./images/index/team/mobile/marketing-mob.jpg"
+                  alt="Фото маркетолога"
+                  width="450"
+                />
+              </picture>
+
               <div class="team-member__container">
                 <h3 class="team-member">Николай Тарасов</h3>
                 <p lang="en" class="team__item">Marketing</p>
@@ -384,12 +456,36 @@
               </div>
             </li>
             <li class="team__list">
-              <img
-                class="team__img"
-                src="./images/ul_designer.jpg"
-                alt="Фото дизайнера"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/index/team/desktop/ui.jpg    1x,
+                    ./images/index/team/desktop/ui-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/index/team/tablet/ui-tab.jpg    1x,
+                    ./images/index/team/tablet/ui-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/index/team/mobile/ui-mob.jpg    1x,
+                    ./images/index/team/mobile/ui-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  class="team__img"
+                  src="./images/index/team/mobile/ui-mob.jpg"
+                  alt="Фото дизайнера"
+                  width="450"
+                />
+              </picture>
+
               <div class="team-member__container">
                 <h3 class="team-member">Михаил Ермаков</h3>
                 <p lang="en" class="team__item">UI Designer</p>

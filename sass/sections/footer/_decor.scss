@@ -4,8 +4,12 @@
   flex-wrap: wrap;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    flex-wrap: nowrap;
-    justify-content: space-around;
+    display: block;
+    // flex-wrap: nowrap;
+    // justify-content: space-around;
+  }
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
   }
 }
 
@@ -28,6 +32,14 @@
   margin-bottom: 60px;
   width: 100%;
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    padding-left: 50%;
+    padding-right: 50%;
+
+    @include display(null, center, center);
+  }
+
   // padding-left: 50%;
   // padding-right: 50%;
 

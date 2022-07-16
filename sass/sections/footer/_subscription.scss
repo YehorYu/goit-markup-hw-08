@@ -1,9 +1,12 @@
 .footer__subscription {
   @include display(flex, center, center);
   flex-wrap: wrap;
-
-  // margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 60px;
+  }
 }
+
+// footer__soc
 
 .footer__text {
   width: 100%;
@@ -21,6 +24,11 @@
   // margin-right: 12px;
   // padding-left: 16px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+    padding-left: 16px;
+  }
 
   &:focus {
     outline: transparent;
