@@ -21,42 +21,78 @@
   <body>
     <header class="header__title">
       <div class="container">
-        <nav class="header__nav">
+        <div class="header__mob-nav">
           <a href="/" lang="en" class="logo link"
             ><span class="logo__item link">Web</span>Studio
           </a>
-          <ul class="header__list">
-            <li class="header__item">
-              <a href="./index.html" class="header__link link">Студия</a>
-            </li>
-            <li class="header__item">
-              <a href="./portfolio.html" class="header__link link current"
-                >Портфолио</a
-              >
-            </li>
-            <li class="header__item">
-              <a href="" class="header__link link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="contacts">
-          <li class="header__item">
-            <a href="mailto:info@devstudio.com" class="contact__list link">
-              <svg class="contact__img mail">
-                <use href="./images/symbol-defs.svg#mail"></use>
-              </svg>
-              info@devstudio.com</a
+          <button
+            type="button"
+            class="header__menu-btn"
+            aria-expanded="false"
+            data-menu-button
+          >
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
             >
-          </li>
-          <li class="header__item">
-            <a href="tel:+380961111111" class="contact__list link">
-              <svg class="contact__img phone">
-                <use href="./images/symbol-defs.svg#smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+              <use
+                class="header__icon-menu"
+                href="./images/menu-mob-set.svg#icon-menu-mob"
+              ></use>
+              <use
+                class="header__icon-close"
+                href="./images/menu-mob-set.svg#icon-close-mob"
+              ></use>
+            </svg>
+          </button>
+        </div>
+        <div class="header__mob-menu" data-menu>
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="./index.html" class="header__link link">Студия</a>
+              </li>
+              <li class="header__item">
+                <a href="./portfolio.html" class="header__link link current"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="header__item">
+                <a href="" class="header__link link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__space">
+            <ul class="contacts">
+              <li class="header__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="contact__list-mail link"
+                >
+                  <svg class="contact__img mail">
+                    <use href="./images/symbol-defs.svg#mail"></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+              <li class="header__item">
+                <a href="tel:+380961111111" class="contact__list-phone link">
+                  <svg class="contact__img phone">
+                    <use href="./images/symbol-defs.svg#smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+            <ul class="header__mob-soc-list">
+              <li class="header__mob-soc-item">Instagram</li>
+              <li class="header__mob-soc-item">Twitter</li>
+              <li class="header__mob-soc-item">Facebook</li>
+              <li class="header__mob-soc-item">LinkedIn</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
