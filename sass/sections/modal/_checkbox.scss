@@ -9,6 +9,11 @@
   color: var(--primery-text-color);
 
   @include display(flex, center, center);
+
+  // @media screen and (max-width: 480px) {
+  //   font-size: 11px;
+  //   line-height: 1.65;
+  // }
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.71;

@@ -1,18 +1,17 @@
 .container.footer {
-  @media screen and (min-width: 768px) {
-    display: flex;
-    // align-items: baseline;
-    flex-wrap: wrap;
-  }
+  // @media screen and (min-width: 768px) {
+  //   // display: flex;
+  //   // // align-items: baseline;
+  //   // flex-wrap: wrap;
+  // }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-  }
+  // @media screen and (min-width: 768px) and (max-width: 1199px) {
+  //   display: flex;
+  //   flex-wrap: nowrap;
+  //   justify-content: space-around;
+  // }
   @media screen and (min-width: 1200px) {
     display: flex;
-    align-items: baseline;
   }
 }
 
@@ -40,19 +39,29 @@
   }
 }
 
-.footer__container {
+.footer__tab-container {
   @media screen and (min-width: 480px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.footer__container {
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
     text-align: center;
     margin-bottom: 60px;
     width: 100%;
   }
 
-  @media screen and (min-width: 1200px) {
-    padding-left: 50%;
-    padding-right: 50%;
+  // @media screen and (min-width: 1200px) {
+  //   // padding-left: 50%;
+  //   // padding-right: 50%;
 
-    @include display(null, center, center);
-  }
+  //   @include display(block, center, center);
+  // }
 
   // padding-left: 50%;
   // padding-right: 50%;

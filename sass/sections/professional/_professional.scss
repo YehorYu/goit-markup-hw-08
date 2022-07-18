@@ -5,7 +5,7 @@
   padding-top: 60px;
 
   @media screen and (min-width: 1200px) {
-    max-width: 1200px;
+    // max-width: 1200px;
     padding-bottom: 94px;
     padding-top: 94px;
   }
@@ -20,11 +20,18 @@
   text-align: center;
   color: var(--tittle-text-color);
 
-  margin-bottom: 50px;
+  @media screen and (min-width: 320px) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .professional__title {
   display: none;
+  
   @media screen and (min-width: 1200px) {
     display: block;
     font-style: normal;

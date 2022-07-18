@@ -3,6 +3,8 @@
   flex-wrap: wrap;
   @media screen and (min-width: 1200px) {
     margin-bottom: 60px;
+    flex-wrap: nowrap;
+    align-items: baseline;
   }
 }
 
@@ -28,6 +30,7 @@
   @media screen and (min-width: 1200px) {
     margin-right: 12px;
     padding-left: 16px;
+    width: 358px;
   }
 
   &:focus {

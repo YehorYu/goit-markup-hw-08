@@ -8,9 +8,11 @@
 }
 
 .footer__soc {
-  text-align: center;
-  width: 100%;
-  margin-bottom: 60px;
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 60px;
+  }
 
   @media screen and (min-width: 1200px) {
     display: block;
@@ -79,14 +81,31 @@
 }
 
 .footer__soc-input {
-  text-align: center;
-  width: 100%;
-
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    text-align: center;
+    width: 100%;
   }
 
-  // margin-left: auto;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: block;
+    max-width: 450px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    // align-items: baseline;
+    margin-left: auto;
+  }
+
+  //   // display: block;
+  //   display: flex;
+  //   flex-wrap: wrap;
+  // //   justify-content: space-between;
+  // // }
+
+  // // margin-left: auto;
 }
