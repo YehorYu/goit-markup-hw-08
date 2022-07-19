@@ -71,7 +71,8 @@
 
 .exemples-link {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100%;
 
   color: var(--primery-text-color);
 
