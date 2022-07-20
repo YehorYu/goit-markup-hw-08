@@ -162,13 +162,13 @@ ul {
     flex-direction: column;
     justify-content: space-between;
     position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
     background-color: #ffffff;
     padding: 48px 40px;
-    height: 796px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -358,10 +358,14 @@ ul {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contact__list-mail {
     padding-top: 20px;
-    margin-bottom: 10px;
   }
 }
 
+@media screen and (min-width: 320px) {
+  .header__link:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
 @media screen and (min-width: 768px) {
   .header__link {
     padding-top: 32px;
@@ -426,6 +430,7 @@ ul {
   }
   .header__item:not(:last-child) {
     margin-right: 50px;
+    margin-bottom: 10px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -507,6 +512,7 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin: 0 auto;
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero__title {
@@ -516,6 +522,7 @@ ul {
 @media screen and (min-width: 768px) {
   .hero__title {
     margin: 0 auto;
+    background-position: center;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-tab-min.jpg);
     padding-top: 118px;
     padding-bottom: 118px;
@@ -963,6 +970,11 @@ ul {
     display: flex;
     align-items: baseline;
     margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__tab-container {
+    margin-bottom: 0;
   }
 }
 

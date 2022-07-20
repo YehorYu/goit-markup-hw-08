@@ -15,6 +15,7 @@
       justify-content: space-between;
 
       position: fixed;
+      z-index: 1;
 
       top: 0;
       left: 0;
@@ -22,7 +23,7 @@
       height: 100vh;
       background-color: #ffffff;
       padding: 48px 40px;
-      height: 796px;
+      // height: 796px;
     }
   }
 
@@ -72,6 +73,7 @@
 .container .header__mob-menu {
   @media screen and (min-width: 768px) {
     display: flex;
+
     max-height: 80px;
     align-items: center;
     width: 100%;
@@ -233,11 +235,15 @@
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding-top: 20px;
-    margin-bottom: 10px;
   }
 }
 
 .header__link {
+  @media screen and (min-width: 320px) {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
   @media screen and (min-width: 768px) {
     padding-top: 32px;
     padding-bottom: 32px;
